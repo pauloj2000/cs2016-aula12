@@ -12,18 +12,18 @@
          Executa o programa exemplo
     -->
 
-    <groupId>com.github.jops425</groupId>
+    <groupId>com.github.pauloj2000</groupId>
     <artifactId>calcular</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
 
-    <name>com.github.jops425.calcular</name>
+    <name>com.github.pauloj2000.calcular</name>
 
     <description>
         Projeto que implementa Parser.
     </description>
 
-    <url>https://github.com/jops425/cs20162-aula12</url>
+    <url>https://github.com/pauloj2000/cs20162-aula12</url>
 
     <organization>
         <name>Instituto de Informática (UFG) - Fábrica de Software</name>
@@ -44,9 +44,9 @@
 
     <developers>
         <developer>
-            <id>jops425</id>
-            <name>João Pedro Vieira</name>
-            <email>jp-a.v@hotmail.com</email>
+            <id>pauloj2000</id>
+            <name>Paulo Junio Sales Rodrigues</name>
+            <email>paulojsalles@gmail.com</email>
             <organization>Instituto de Informática (UFG)</organization>
             <organizationUrl>http://www.inf.ufg.br</organizationUrl>
         </developer>
@@ -97,7 +97,7 @@
                         <param>com.github.kyriosdata.calcular.Calcular</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.github.jops425.calcular.*</param>
+                        <param>com.github.pauloj2000.calcular.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
@@ -142,7 +142,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>jars/</classpathPrefix>
-                            <mainClass>com.github.jops425.calcular.QP</mainClass>
+                            <mainClass>com.github.pauloj2000.calcular.QP</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
