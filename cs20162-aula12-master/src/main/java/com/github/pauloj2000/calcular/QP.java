@@ -2,6 +2,7 @@
  * UNIVERSIDADE FEDERAL DE GOIÁS - UFG 
  * Construção de Software - 2016/2
  * Professor: Fábio Nogueira de Lucena
+ * Aluno: Paulo Junio Sales Rodrigues - 201602510
  */
 
 package com.github.pauloj2000.calcular;
