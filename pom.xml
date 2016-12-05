@@ -53,9 +53,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/jops425/cs20162-aula12.git</connection>
-        <developerConnection>scm:git:https://github.com/jops425/cs20162-aula12.git</developerConnection>
-        <url>https://github.com/jops425/cs20162-aula12</url>
+        <connection>scm:git:https://github.com/pauloj2000cs20162-aula12.git</connection>
+        <developerConnection>scm:git:https://github.com/pauloj2000/cs20162-aula12.git</developerConnection>
+        <url>https://github.com/pauloj2000/cs20162-aula12</url>
     </scm>
 
     <properties>
