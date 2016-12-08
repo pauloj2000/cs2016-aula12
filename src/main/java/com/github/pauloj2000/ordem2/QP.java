@@ -27,18 +27,7 @@ public class QP {
     
     static ApoioQP apoioqp = new ApoioQP();
 
-    /**
-     * Metodo Principal
-     *
-     * @param args - Local onde está o .txt contendo os testes. Caso cotenha -h
-     * antes do Local onde estão os testes, o programa retornará o relatorio em
-     * HTML caso contrário será padrão e o relatório será em Json.
-     */
     
-    public static void main(String[] args) {
-        System.exit(pseudoMain(args));
-    }
-
     /**
      * Metodo referente ao Main
      *
@@ -61,12 +50,12 @@ public class QP {
             if (args.length > 1) {
                 String op = args[1];
                 if (op.equals("-h")) {
-                    return htmlOption();
+                    return opcaoHtml();
                 } else {
-                    return jsonOption();
+                    return opcaoJson();
                 }
             } else {
-                return jsonOption();
+                return opcaoJson();
             }
 
         } catch (NullPointerException | IOException e) {
@@ -83,7 +72,7 @@ public class QP {
      * de exceção.
      */
     
-    private static int htmlOption() throws IOException {
+    private static int opcaoHtml() throws IOException {
         RelatorioHtml dao = new RelatorioHtml(localFile);
         dao.criadorHTML(apoioqp.getTeste());
         return 0;
@@ -97,7 +86,7 @@ public class QP {
      * de exceção.
      */
     
-    private static int jsonOption() throws IOException {
+    private static int opcaoJson() throws IOException {
         RelatorioJson dao = new RelatorioJson(localFile);
         dao.add(apoioqp.getTeste());
 
