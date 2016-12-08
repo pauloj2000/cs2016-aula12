@@ -8,7 +8,6 @@
 package com.github.pauloj2000.ordem2;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * Classe que testa o QualidadeParser(QP).
@@ -18,7 +17,7 @@ import static org.junit.Assert.*;
 public class QPTest {
     
     @Test
-    public void testPseudoMain() {
+    public void testQP() {
         String[] args = new String[2];
         String local = "test01.txt";
         String tipo = "-h";
@@ -30,7 +29,7 @@ public class QPTest {
     }
     
     @Test
-    public void testPseudoMain2() {
+    public void testQP02() {
         String[] args = new String[2];
         String local = "teste.txt";
         String tipo = "-h";
@@ -42,7 +41,7 @@ public class QPTest {
     }
     
     @Test
-    public void testPseudoMain3() {
+    public void testQP03() {
        String[] args = new String[2];
         String local = "test01.txt";
         String tipo = "-j";
@@ -54,7 +53,7 @@ public class QPTest {
     }
     
     @Test
-    public void testPseudoMain4() {
+    public void testQP04() {
        String[] args = new String[1];
         String local = "teste.txt";
         args[0] = local;
@@ -64,7 +63,7 @@ public class QPTest {
     }
     
     @Test
-    public void testPseudoMain5() {
+    public void testQP05() {
         String[] args = new String[1];
         String local = "test01.txt";
         args[0] = local;
@@ -73,7 +72,7 @@ public class QPTest {
         assertEquals(expResult, result);
     }
     @Test
-    public void testPseudoMain6() {
+    public void testQP06() {
         String[] args = new String[1];
         int expResult = 1;
         int result = qp.pseudoMain(args);
@@ -81,7 +80,7 @@ public class QPTest {
     }
     
     @Test
-    public void testPseudoMain7() {
+    public void testQP07() {
         String[] args = new String[1];
         String local = "test02.txt";
         args[0] = local;
@@ -91,7 +90,7 @@ public class QPTest {
     }
     
     @Test
-    public void testPseudoMain8() {
+    public void testQP08() {
         String[] args = new String[1];
         String local = "test03.txt";
         args[0] = local;
