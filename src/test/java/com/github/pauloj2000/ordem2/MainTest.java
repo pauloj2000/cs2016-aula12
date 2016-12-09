@@ -7,7 +7,6 @@
 
 package com.github.pauloj2000.ordem2;
 
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -53,13 +52,15 @@ public class MainTest {
         int result = Main.pseudoMain(args);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testMain04() {
-       String[] args = new String[1];
-        String local = "teste.txt";
+        String[] args = new String[2];
+        String local = "test01.txt";
+        String tipo = "-h";
         args[0] = local;
-        int expResult = 1;
+        args[1] = tipo;
+        int expResult = 0;
         int result = Main.pseudoMain(args);
         assertEquals(expResult, result);
     }
