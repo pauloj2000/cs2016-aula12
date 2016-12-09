@@ -22,10 +22,10 @@ public class Main {
             String localFile;
 
     /**
-     * Objeto construtor da classe de apoio ao Main
+     * Objeto construtor da classe de apoio ao QP
      */
     
-    static ApoioQP apoioqp = new ApoioQP();
+    static ApoioMain apoioqp = new ApoioMain();
 
     
     /**
@@ -63,7 +63,7 @@ public class Main {
             return 1;
         }
     }
-    
+
     /**
      * Metodo Principal
      *

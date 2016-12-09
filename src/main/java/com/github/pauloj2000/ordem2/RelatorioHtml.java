@@ -68,7 +68,7 @@ public class RelatorioHtml {
      * 
      * @param test - Teste - resultados dos testes gerados
      * @return - String - Codigo HTML
-     * @see com.github.pauloj2000.ordem2.Test
+     * @see com.github.pauloj2000.ordem2.Teste
      */
     
     private String geradorHTML(Teste test) {
