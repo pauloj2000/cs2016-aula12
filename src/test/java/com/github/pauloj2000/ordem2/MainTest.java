@@ -11,7 +11,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Classe que testa o QualidadeParser(QP).
+ * Classe que testa o Main.
  * 
  */
 
