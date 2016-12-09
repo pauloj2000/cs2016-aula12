@@ -81,7 +81,5 @@ public class Valor {
         teste.setSucessos(contSuccess);
         return teste;
     }
-
-
 }
 
