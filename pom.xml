@@ -38,7 +38,7 @@
     </dependencies>
 
     <build>
-             <!-- Define o nome do arquivo a ser gerado (.jar é acrescentada) -->
+             <!-- Define o nome do arquivo a ser gerado(.jar é acrescentada) -->
         <finalName>qp</finalName>
         <plugins>
 
