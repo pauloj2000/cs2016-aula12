@@ -22,7 +22,7 @@ public class Valor {
      * @return - float - resultado da expressão
      */
     
-    private float expressionExector(String expression) {
+    private float executaExpressao(String expression) {
         List<Token> tokens = new Lexer(expression).tokenize();
         Parser parser = new Parser(tokens);
         float resultado = parser.expressao().valor();
@@ -38,7 +38,7 @@ public class Valor {
      * @see java.util.HashMap
      */
     
-    private float expressionExector(String expression, HashMap<String, Float> variables) {
+    private float executaExpressao(String expression, HashMap<String, Float> variables) {
         List<Token> tokens = new Lexer(expression).tokenize();
         Parser parser = new Parser(tokens);
         float resultado = parser.expressao().valor(variables);
@@ -50,9 +50,9 @@ public class Valor {
      * @param teste - Teste - casos de testes
      * @return - Teste - Resultados
      * 
-     * @see com.github.estevaocs.model.Test
+     * @see com.github.pauloj2000.ordem2.Teste
      */
-    public Teste testerExecuter(Teste teste) {
+    public Teste testeExec(Teste teste) {
         int contSuccess = 0;
         long time = 0;
         long memoriaInicial = Runtime.getRuntime().totalMemory() 
@@ -61,11 +61,11 @@ public class Valor {
             float obtido;
             try {
                 long startTime = System.nanoTime();
-                obtido = expressionExector(exp.getExpressao(), exp.getVariaveis());
+                obtido = executaExpressao(exp.getExpressao(), exp.getVariaveis());
                 time += System.nanoTime() - startTime;
             } catch (NullPointerException npe) {
                 long startTime = System.nanoTime();
-                obtido = expressionExector(exp.getExpressao());
+                obtido = Valor.this.executaExpressao(exp.getExpressao());
                 time += System.nanoTime() - startTime;
             }
             exp.setObtido(obtido);
@@ -84,3 +84,4 @@ public class Valor {
 
 
 }
+
