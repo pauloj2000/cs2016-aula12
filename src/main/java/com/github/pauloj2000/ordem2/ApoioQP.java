@@ -111,7 +111,7 @@ public class ApoioQP {
     public void popularTeste() throws IOException, NumberFormatException {
         toExpression();
         Valor valor = new Valor();
-        teste = valor.testerExecuter(teste);
+        teste = valor.testeExec(teste);
     }
 
     /**
