@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Classe que tem como função apoiar a classe QP.
+ * Classe que tem como função apoiar a classe Main.
  */
 
 public class ApoioQP {
@@ -45,7 +45,7 @@ public class ApoioQP {
 
         ArrayList<String> linhas = new ArrayList<>();
 
-        FileReader arq = new FileReader(QP.localFile);
+        FileReader arq = new FileReader(Main.localFile);
         BufferedReader bufferedReader = new BufferedReader(arq);
 
         String line = bufferedReader.readLine();

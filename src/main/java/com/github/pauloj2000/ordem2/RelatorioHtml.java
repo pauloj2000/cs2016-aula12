@@ -10,7 +10,6 @@ package com.github.pauloj2000.ordem2;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.swing.text.html.HTMLEditorKit;
 
 /**
  * Classe que escreve o relatório em código HTML
